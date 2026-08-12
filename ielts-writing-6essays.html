@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雅思写作Task 2 · 七篇定稿范文全集</title>
+<style>
+  :root {
+    --bg: #fdfbf7;
+    --card: #ffffff;
+    --text: #2c2c2c;
+    --text-muted: #6b6b6b;
+    --border: #e8e4db;
+    --accent-1: #2c5e72;
+    --accent-2: #6b4e3d;
+    --accent-3: #4a7c59;
+    --tag-db: #d4e7ed;
+    --tag-ad: #f0dfd1;
+    --tag-oa: #d8eed9;
+    --tag-cs: #e8def0;
+    --tag-bg: #f5f2ea;
+    --shadow: 0 2px 12px rgba(0,0,0,.06);
+    --radius: 12px;
+    --font-cn: "PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;
+    --font-en: "Georgia","Times New Roman",serif;
+  }
+
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+  body {
+    font-family: var(--font-cn);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    background: linear-gradient(135deg, #1e3a42 0%, #2c5e72 40%, #3d7b8f 100%);
+    color: #fff;
+    padding: 64px 24px 56px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero h1 { font-size: 2.4em; font-weight: 700; letter-spacing: .02em; position: relative; }
+  .hero .sub { margin-top: 12px; font-size: 1.05em; opacity: .82; font-weight: 300; letter-spacing: .04em; position: relative; }
+  .hero .badge-row { margin-top: 22px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; position: relative; }
+  .hero .badge {
+    background: rgba(255,255,255,.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-size: .88em;
+    letter-spacing: .03em;
+  }
+
+  /* ── Layout ── */
+  .container { max-width: 920px; margin: 0 auto; padding: 0 24px; }
+  .section { margin: 48px 0; }
+
+  /* ── Section headers ── */
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .section-num {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 1.2em; color: #fff; flex-shrink: 0;
+  }
+  .section-title h2 { font-size: 1.4em; font-weight: 700; }
+
+  /* ── Type colors ── */
+  .type-db .section-num { background: #2c5e72; }
+  .type-db .card { border-left: 4px solid #2c5e72; }
+  .type-ad .section-num { background: #6b4e3d; }
+  .type-ad .card { border-left: 4px solid #6b4e3d; }
+  .type-oa .section-num { background: #4a7c59; }
+  .type-oa .card { border-left: 4px solid #4a7c59; }
+  .type-cs .section-num { background: #7b5ea7; }
+  .type-cs .card { border-left: 4px solid #7b5ea7; }
+
+  /* ── Cards ── */
+  .card {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 32px 36px;
+    margin-bottom: 20px;
+  }
+
+  /* ── Topic quote ── */
+  .topic-box {
+    background: var(--tag-bg);
+    border-radius: 10px;
+    padding: 18px 24px;
+    margin-bottom: 24px;
+    font-style: italic;
+    font-family: var(--font-en);
+    color: #4a4a4a;
+    border-left: 3px solid #c4b99a;
+    font-size: .98em;
+  }
+  .topic-box::before { content: "📝 题目"; display: block; font-family: var(--font-cn); font-style: normal; font-size: .8em; color: #999; margin-bottom: 6px; text-transform: uppercase; letter-spacing: .06em; }
+
+  /* ── Essay block ── */
+  .essay {
+    background: #fafaf7;
+    border-radius: 10px;
+    padding: 28px 30px;
+    margin-bottom: 24px;
+    font-family: var(--font-en);
+    font-size: .97em;
+    line-height: 1.85;
+    border: 1px solid var(--border);
+  }
+  .essay p { margin-bottom: 16px; }
+  .essay p:last-child { margin-bottom: 0; }
+  .essay::before { content: "✍️ 范文"; display: block; font-family: var(--font-cn); font-style: normal; font-size: .82em; color: #999; margin-bottom: 14px; letter-spacing: .06em; }
+
+  /* ── Vocabulary table ── */
+  .vocab-wrap { margin-top: 8px; }
+  .vocab-wrap h4 { font-size: .92em; color: #888; margin-bottom: 10px; font-weight: 600; letter-spacing: .04em; }
+  .vocab-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .92em;
+  }
+  .vocab-table th {
+    background: #f5f2ea;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: .85em;
+    color: #6b6b6b;
+    letter-spacing: .04em;
+  }
+  .vocab-table th:first-child { border-radius: 8px 0 0 0; }
+  .vocab-table th:last-child { border-radius: 0 8px 0 0; }
+  .vocab-table td {
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .vocab-table tr:last-child td:first-child { border-radius: 0 0 0 8px; }
+  .vocab-table tr:last-child td:last-child { border-radius: 0 0 8px 0; }
+  .vocab-table td:first-child {
+    font-family: var(--font-en);
+    font-style: italic;
+    color: var(--accent-1);
+    font-weight: 500;
+  }
+  .vocab-table tr:hover td { background: #fdfbf6; }
+
+  /* ── Comparison Table ── */
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .93em;
+    margin-top: 12px;
+  }
+  .comp-table thead th {
+    background: #1e3a42;
+    color: #fff;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: .04em;
+  }
+  .comp-table thead th:first-child { border-radius: 10px 0 0 0; }
+  .comp-table thead th:last-child { border-radius: 0 10px 0 0; }
+  .comp-table td {
+    padding: 11px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .comp-table tbody tr:hover td { background: #f9f7f2; }
+  .comp-table tbody tr:last-child td:first-child { border-radius: 0 0 0 10px; }
+  .comp-table tbody tr:last-child td:last-child { border-radius: 0 0 10px 0; }
+  .type-tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: .82em;
+    font-weight: 600;
+    letter-spacing: .02em;
+  }
+  .tag-db2 { background: #d4e7ed; color: #1e4a5a; }
+  .tag-ad2 { background: #f0dfd1; color: #5a3a28; }
+  .tag-oa2 { background: #d8eed9; color: #2d5a30; }
+  .tag-cs2 { background: #e8def0; color: #4a2d6e; }
+
+  /* ── Study Tips ── */
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+  }
+  .tip-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 24px;
+    text-align: center;
+    transition: transform .15s;
+  }
+  .tip-card:hover { transform: translateY(-2px); }
+  .tip-icon { font-size: 2.4em; margin-bottom: 10px; }
+  .tip-card h4 { font-size: 1.05em; margin-bottom: 8px; font-weight: 700; }
+  .tip-card p { font-size: .9em; color: var(--text-muted); line-height: 1.7; }
+
+  /* ── Labels ── */
+  .label-tags {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;
+  }
+  .label-tags span {
+    padding: 3px 12px; border-radius: 12px; font-size: .8em; font-weight: 600; letter-spacing: .03em;
+  }
+  .lt-db { background: #d4e7ed; color: #1e4a5a; }
+  .lt-ad { background: #f0dfd1; color: #5a3a28; }
+  .lt-oa { background: #d8eed9; color: #2d5a30; }
+  .lt-cs { background: #e8def0; color: #4a2d6e; }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    padding: 40px 24px;
+    color: #b5b0a4;
+    font-size: .88em;
+    border-top: 1px solid var(--border);
+    margin-top: 56px;
+  }
+
+  /* ── TOC ── */
+  .toc {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 28px 32px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 2;
+  }
+  .toc h3 { font-size: 1.05em; margin-bottom: 16px; color: #555; letter-spacing: .04em; }
+  .toc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 8px;
+  }
+  .toc-item {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #fafaf7;
+    text-decoration: none;
+    color: var(--text);
+    font-size: .91em;
+    transition: background .12s;
+    border: 1px solid transparent;
+  }
+  .toc-item:hover { background: #f0ede4; border-color: var(--border); }
+  .toc-dot {
+    width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+  }
+
+  /* ── Print ── */
+  @media print {
+    body { background: #fff; font-size: 13px; }
+    .hero { padding: 24px; background: #1e3a42 !important; -webkit-print-color-adjust: exact; }
+    .card { box-shadow: none; break-inside: avoid; border: 1px solid #ddd; padding: 20px 24px; }
+    .essay { background: #fff; border: 1px solid #ddd; }
+    .section { margin: 24px 0; }
+    .toc { display: none; }
+    .footer { border-top: 1px solid #ccc; }
+  }
+
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 1.6em; }
+    .card { padding: 20px 18px; }
+    .essay { padding: 18px 16px; font-size: .9em; }
+    .vocab-table { font-size: .8em; }
+    .vocab-table td, .vocab-table th { padding: 6px 8px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════ HERO ═══════════ -->
+<header class="hero">
+  <h1>雅思写作 Task 2 · 七篇定稿范文全集</h1>
+  <p class="sub">7 篇范文 · 6 种题型全覆盖 · 范文 + 词汇表 + 框架拆解</p>
+  <div class="badge-row">
+    <span class="badge">讨论双方</span>
+    <span class="badge">同意/不同意</span>
+    <span class="badge">利弊分析</span>
+    <span class="badge">原因+方案</span>
+    <span class="badge">厌学问题</span>
+    <span class="badge">利大于弊</span>
+  </div>
+</header>
+
+<div class="container">
+
+<!-- ═══════════ TOC ═══════════ -->
+<div class="toc">
+  <h3>📖 快速导航</h3>
+  <div class="toc-grid">
+    <a href="#essay1" class="toc-item"><span class="toc-dot" style="background:#2c5e72"></span> 讨论双方·办公</a>
+    <a href="#essay2" class="toc-item"><span class="toc-dot" style="background:#6b4e3d"></span> 同意·大学</a>
+    <a href="#essay3" class="toc-item"><span class="toc-dot" style="background:#6b4e3d"></span> 同意·交通</a>
+    <a href="#essay4" class="toc-item"><span class="toc-dot" style="background:#4a7c59"></span> 利弊·购物</a>
+    <a href="#essay5" class="toc-item"><span class="toc-dot" style="background:#7b5ea7"></span> 方案·健康</a>
+    <a href="#essay6" class="toc-item"><span class="toc-dot" style="background:#7b5ea7"></span> 方案·教育</a>
+    <a href="#essay7" class="toc-item"><span class="toc-dot" style="background:#4a7c59"></span> 利弊·教育</a>
+  </div>
+</div>
+
+<!-- ═══════════ ESSAY 1 ═══════════ -->
+<section class="section type-db" id="essay1">
+  <div class="section-title">
+    <div class="section-num">1</div>
+    <h2>讨论双方（Discuss both views）— 远程办公</h2>
+  </div>
+  <div class="label-tags">
+    <span class="lt-db">题型：Discuss both views</span>
+    <span class="lt-db">核心框架：dilemma → I would argue</span>
+  </div>
+
+  <div class="card">
+    <div class="topic-box">
+      <em>Some people think that it is better to work from home, while others believe that working in an office is more beneficial. Discuss both views and give your opinion.</em>
+    </div>
+    <div class="essay">
+      <p>As technology advances, more and more people have the chance to work remotely. Whether it is better to work from home or office has always been a <strong>dilemma</strong> for individuals. I would argue that it is more advantageous to work from home.</p>
+      <p>The option to work in an office is attractive for several reasons. Most office employees are required to <strong>show up for work</strong> at a fixed time, which means they have to commute by public transport or drive themselves. As a result, they must maintain a regular sleep schedule, which can actually promote a healthier daily routine. Another reason is that people tend to be more productive in an office environment. This is because colleagues and supervisors are physically present, which creates a sense of <strong>accountability</strong> and reduces <strong>procrastination</strong>.</p>
+      <p>On the other hand, I believe that it is more beneficial to work from home. Firstly, remote work does not require <strong>physical presence</strong>. For example, since individuals do not need to commute, they can save time and energy, therefore having more time to be with their family. Secondly, working from home offers greater <strong>flexibility</strong>, which improves job satisfaction. For instance, employees can design their own schedule to work at their best state, thus <strong>enhancing their productivity</strong>. This way of adjustment always leads to higher <strong>motivation</strong> and lower stress levels.</p>
+      <p>In conclusion, for the reasons mentioned above, it seems to me that people working at home are more likely to experience job satisfaction. This is mainly because remote work not only saves commuting time and allows for more family time, but also reduces social stress <strong>commonly found in</strong> an office environment.</p>
+    </div>
+
+    <div class="vocab-wrap">
+      <h4>📋 可学词汇与表达</h4>
+      <table class="vocab-table">
+        <thead><tr><th>词汇/表达</th><th>含义</th><th>用法场景</th></tr></thead>
+        <tbody>
+          <tr><td><em>dilemma</em></td><td>两难困境</td><td>开头引入争议话题</td></tr>
+          <tr><td><em>show up for work</em></td><td>上班打卡/到场</td><td>描述工作要求</td></tr>
+          <tr><td><em>accountability</em></td><td>责任感</td><td>描述职场/学习环境</td></tr>
+          <tr><td><em>procrastination</em></td><td>拖延症</td><td>描述负面行为</td></tr>
+          <tr><td><em>physical presence</em></td><td>物理在场</td><td>对比线上/线下</td></tr>
+          <tr><td><em>flexibility</em></td><td>灵活性</td><td>描述工作/学习优势</td></tr>
+          <tr><td><em>enhancing productivity</em></td><td>提升效率</td><td>描述积极影响</td></tr>
+          <tr><td><em>motivation</em></td><td>动力</td><td>描述心理状态</td></tr>
+          <tr><td><em>commonly found in</em></td><td>常见于</td><td>描述普遍现象</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ESSAY 2 ═══════════ -->
+<section class="section type-ad" id="essay2">
+  <div class="section-title">
+    <div class="section-num">2</div>
+    <h2>同意/不同意（Agree/Disagree）— 免费大学</h2>
+  </div>
+  <div class="label-tags">
+    <span class="lt-ad">题型：Agree/Disagree</span>
+    <span class="lt-ad">核心框架：While I acknowledge… I believe…</span>
+  </div>
+
+  <div class="card">
+    <div class="topic-box">
+      <em>Some people believe that university education should be free for all students, regardless of their financial background. To what extent do you agree or disagree?</em>
+    </div>
+    <div class="essay">
+      <p>Some people hold a view that college tuition fees should be free for all students, <strong>regardless of</strong> their financial background. While I <strong>acknowledge the benefits</strong> of this policy, I believe that the disadvantages would outweigh the advantages <strong>in the long run</strong>.</p>
+      <p>On the one hand, I accept that it is crucial to make university free for all individuals. In most communities, there are people who are <strong>impoverished</strong> and disadvantaged in some way. It is possible for those with <strong>low-income backgrounds</strong> to go to university if they do not need to pay for tuition fees. In this way, it would heavily reduce the <strong>financial burden</strong> on their families. This would undoubtedly give them a better starting point in life.</p>
+      <p>At the same time, I believe that the drawbacks of free university education are much more significant. In some countries, the cost of running universities is already extremely high, and making them free would <strong>impose an unbearable burden</strong> on <strong>national expenditure</strong> as well as taxpayers. For example, when governments spend more money on education, they may be forced to reduce funding for healthcare and infrastructure, as the overall budget is limited. Although a small reduction in tuition fees might seem helpful in the short term, <strong>in the long run</strong>, it would have a much greater negative impact on other essential public services. Moreover, making education entirely free does not necessarily guarantee that the most disadvantaged students will benefit the most, as wealthy families often have better access to <strong>preparatory resources</strong> and <strong>elite institutions</strong>.</p>
+      <p>In conclusion, it is true that free university education sounds beneficial for students from disadvantaged backgrounds, but in my opinion, the <strong>financial strain</strong> it places on governments and taxpayers makes it an impractical policy. After all, public funds are limited, and they should be <strong>allocated in a way that benefits</strong> the majority of society.</p>
+    </div>
+
+    <div class="vocab-wrap">
+      <h4>📋 可学词汇与表达</h4>
+      <table class="vocab-table">
+        <thead><tr><th>词汇/表达</th><th>含义</th><th>用法场景</th></tr></thead>
+        <tbody>
+          <tr><td><em>regardless of</em></td><td>不论/不管</td><td>让步状语</td></tr>
+          <tr><td><em>acknowledge the benefits</em></td><td>承认好处</td><td>让步段开头</td></tr>
+          <tr><td><em>impoverished</em></td><td>贫困的</td><td>描述弱势群体</td></tr>
+          <tr><td><em>low-income backgrounds</em></td><td>低收入背景</td><td>描述经济困难</td></tr>
+          <tr><td><em>financial burden</em></td><td>财务负担</td><td>描述经济压力</td></tr>
+          <tr><td><em>impose an unbearable burden</em></td><td>施加难以承受的负担</td><td>描述负面影响</td></tr>
+          <tr><td><em>national expenditure</em></td><td>国家支出</td><td>讨论政府财政</td></tr>
+          <tr><td><em>in the long run</em></td><td>长远来看</td><td>对比短期/长期</td></tr>
+          <tr><td><em>preparatory resources</em></td><td>预备资源</td><td>描述教育机会</td></tr>
+          <tr><td><em>elite institutions</em></td><td>精英机构</td><td>描述名校</td></tr>
+          <tr><td><em>financial strain</em></td><td>财政压力</td><td>描述政府困境</td></tr>
+          <tr><td><em>allocated in a way that benefits</em></td><td>以某种方式分配以惠及</td><td>结尾建议</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ESSAY 3 ═══════════ -->
+<section class="section type-ad" id="essay3">
+  <div class="section-title">
+    <div class="section-num">3</div>
+    <h2>同意/不同意（Agree/Disagree）— 铁路 vs 公路</h2>
+  </div>
+  <div class="label-tags">
+    <span class="lt-ad">题型：Agree/Disagree</span>
+    <span class="lt-ad">核心框架：While… are undeniably important, I disagree…</span>
+  </div>
+
+  <div class="card">
+    <div class="topic-box">
+      <em>Some people believe that governments should spend more money on railways rather than on roads. To what extent do you agree or disagree?</em>
+    </div>
+    <div class="essay">
+      <p>While railways are <strong>undeniably</strong> important for transport between cities, I disagree with the view that governments should <strong>prioritise funding on</strong> railways over road infrastructure.</p>
+      <p>On the one hand, I acknowledge that railways could benefit individuals in <strong>specific scenarios</strong>. High-speed trains can transport large numbers of passengers over long distances efficiently. For example, in China, some companies have <strong>business operations</strong> in both Beijing and Shanghai, which means their employees often need to commute between these two cities efficiently and sometimes work during the journey. As railways offer comfortable carriages with tables and <strong>power outlets</strong>, business travellers can work <strong>with great ease</strong>. Since railways are more efficient for business travel, I can understand why some people feel that we should prioritise railway infrastructure.</p>
+      <p>At the same time, road construction is significantly more <strong>inclusive</strong> and <strong>cost-effective</strong> than railway expansion, especially in undeveloped areas. The cost of building a kilometre of high-speed rail far <strong>outweighs</strong> the cost of road building. For example, building two-lane roads is far more affordable and can immediately connect <strong>remote villages</strong> to towns, making it easier for children to attend school, farmers to transport their crops to markets, and patients to reach hospitals. Without such road investment, these communities would remain isolated, widening the gap between urban and rural areas. In this way, roads deliver massive benefits to ordinary citizens in their daily lives, especially in rural areas.</p>
+      <p>In conclusion, while I agree that expenditure on railways is valuable, I believe that road infrastructure is ultimately more beneficial for most people in their daily lives, particularly for those living in rural and <strong>underserved areas</strong>.</p>
+    </div>
+
+    <div class="vocab-wrap">
+      <h4>📋 可学词汇与表达</h4>
+      <table class="vocab-table">
+        <thead><tr><th>词汇/表达</th><th>含义</th><th>用法场景</th></tr></thead>
+        <tbody>
+          <tr><td><em>undeniably</em></td><td>不可否认地</td><td>让步状语</td></tr>
+          <tr><td><em>prioritise funding on</em></td><td>优先投资于</td><td>讨论政府预算</td></tr>
+          <tr><td><em>specific scenarios</em></td><td>特定场景</td><td>限定讨论范围</td></tr>
+          <tr><td><em>business operations</em></td><td>商业运营</td><td>商务场景</td></tr>
+          <tr><td><em>power outlets</em></td><td>电源插座</td><td>描述设施</td></tr>
+          <tr><td><em>with great ease</em></td><td>轻松地</td><td>描述便利性</td></tr>
+          <tr><td><em>inclusive</em></td><td>包容性的</td><td>描述政策/设施</td></tr>
+          <tr><td><em>cost-effective</em></td><td>划算的/性价比高的</td><td>比较两个选项</td></tr>
+          <tr><td><em>outweighs</em></td><td>超过/重于</td><td>比较利弊</td></tr>
+          <tr><td><em>remote villages</em></td><td>偏远村庄</td><td>描述农村地区</td></tr>
+          <tr><td><em>underserved areas</em></td><td>服务不足的地区</td><td>描述弱势地区</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ESSAY 4 ═══════════ -->
+<section class="section type-oa" id="essay4">
+  <div class="section-title">
+    <div class="section-num">4</div>
+    <h2>利弊分析（Advantages/Disadvantages）— 网购</h2>
+  </div>
+  <div class="label-tags">
+    <span class="lt-oa">题型：Advantages/Disadvantages</span>
+    <span class="lt-oa">核心框架：there are both positive and negative effects</span>
+  </div>
+
+  <div class="card">
+    <div class="topic-box">
+      <em>Online shopping is becoming increasingly popular around the world. What are the advantages and disadvantages of this trend?</em>
+    </div>
+    <div class="essay">
+      <p>It is true that <strong>an increasing number of</strong> people shop online as technology advances. This has affected individuals in various ways, and in my opinion there are both positive and negative effects.</p>
+      <p>Shopping online has had an impact on consumer behaviour and has <strong>broken through geographic boundaries</strong> in the relationship between consumers and <strong>retailers</strong>. Firstly, a consumer can buy products from all over the world on the internet without leaving home. Secondly, online prices are often lower than those in physical stores, making it more <strong>cost-effective</strong> for consumers. Thirdly, online shopping has also changed the way people compare products, as they can easily read <strong>reviews</strong> from other buyers before making a decision.</p>
+      <p>On the one hand, these developments can be extremely positive. In the past, it was much more difficult to find what you really wanted in local shops because the <strong>available choices</strong> were limited. Nowadays, shopping on computers or mobile phones is more convenient and offers <strong>a wider variety of</strong> choices. Many of us benefit from these services. For example, when individuals want to buy something specific online, it is often easier for them to compare prices online rather than walking around different stores to find the cheapest option.</p>
+      <p>On the other hand, the <strong>availability of</strong> <strong>discounts and promotions</strong> offered by online stores can also have the result of encouraging people to buy products that they do not actually need. For example, when people scroll through their phones, they often see discounts for their favourite clothing brands, which makes them buy <strong>impulsively</strong>. In addition, people who buy clothes or shoes online do not have the chance to try them on. This may lead to a higher risk of receiving <strong>inappropriate items</strong>.</p>
+      <p>In conclusion, online shopping has certainly <strong>revolutionised</strong> the way people consume products, but not all of the outcomes of this revolution have been positive.</p>
+    </div>
+
+    <div class="vocab-wrap">
+      <h4>📋 可学词汇与表达</h4>
+      <table class="vocab-table">
+        <thead><tr><th>词汇/表达</th><th>含义</th><th>用法场景</th></tr></thead>
+        <tbody>
+          <tr><td><em>an increasing number of</em></td><td>越来越多的</td><td>描述趋势</td></tr>
+          <tr><td><em>broken through geographic boundaries</em></td><td>打破地理界限</td><td>描述全球化/科技影响</td></tr>
+          <tr><td><em>retailers</em></td><td>零售商</td><td>商业主题</td></tr>
+          <tr><td><em>cost-effective</em></td><td>性价比高的</td><td>描述经济优势</td></tr>
+          <tr><td><em>reviews</em></td><td>评价/评论</td><td>网购场景</td></tr>
+          <tr><td><em>available choices</em></td><td>可用的选择</td><td>描述资源</td></tr>
+          <tr><td><em>a wider variety of</em></td><td>更多样的</td><td>描述多样性</td></tr>
+          <tr><td><em>availability of</em></td><td>可获取性</td><td>描述资源存在</td></tr>
+          <tr><td><em>discounts and promotions</em></td><td>折扣和促销</td><td>商业场景</td></tr>
+          <tr><td><em>impulsively</em></td><td>冲动地</td><td>描述消费行为</td></tr>
+          <tr><td><em>inappropriate items</em></td><td>不合适的物品</td><td>网购退货场景</td></tr>
+          <tr><td><em>revolutionised</em></td><td>革命性地改变了</td><td>描述重大影响</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ESSAY 5 ═══════════ -->
+<section class="section type-cs" id="essay5">
+  <div class="section-title">
+    <div class="section-num">5</div>
+    <h2>原因 + 解决方案（Causes and Solutions）— 肥胖问题</h2>
+  </div>
+  <div class="label-tags">
+    <span class="lt-cs">题型：Causes & Solutions</span>
+    <span class="lt-cs">核心框架：This essay will discuss… and the measures…</span>
+  </div>
+
+  <div class="card">
+    <div class="topic-box">
+      <em>In many countries, the number of people suffering from obesity and weight-related health problems is increasing. What are the causes of this issue, and what can governments and individuals do to solve it?</em>
+    </div>
+    <div class="essay">
+      <p>Humans are responsible for a variety of weight-related health issues and obesity. They can also take steps to reduce weight. This essay will discuss weight-related health problems and the measures that governments and individuals can take to address these problems.</p>
+      <p>Two of the biggest causes of obesity and weight-related issues are the <strong>abundance of</strong> fast food and a <strong>sedentary lifestyle</strong>. Fast food can be easily found in communities, and many advertisements promote it, which has a <strong>devastating effect</strong> on individuals, especially children, who cannot <strong>resist the desire</strong> to try those tasty chips or fried chicken wings. As technology advances, many individuals also like to play video games or watch short videos on the internet, which can cause them to spend hours sitting in front of their screens, thereby leading to a sedentary lifestyle.</p>
+      <p>Governments could certainly make more efforts to <strong>tackle these issues</strong>. They could build more sports centres, which would make it easier for citizens to exercise, socialise, and stay active. They could also introduce laws to ban advertisements for fast food and <strong>impose taxes on</strong> fast food companies. In this way, companies might produce less fast food, and people would be less likely to <strong>be exposed to</strong> such advertisements, thereby benefiting from these regulations.</p>
+      <p>Individuals should also <strong>take responsibility for</strong> dealing with their health issues. They can do small amounts of exercise regularly, which is not too difficult to maintain. For example, individuals can take the stairs rather than using a lift, and choose to walk for short distances instead of driving or taking a taxi. Also, most people can reduce the time they spend sitting in front of screens. For instance, they could stand up and walk around for a few minutes every hour, with a reminder set on their devices. By doing regular exercise and avoiding long periods of sitting, they can help reduce the <strong>likelihood</strong> of obesity and weight-related issues in the long run.</p>
+      <p>In conclusion, both governments and individuals must pay more attention to health issues and take steps to address them. Only through <strong>joint efforts</strong> can we effectively <strong>reverse this worrying trend</strong>.</p>
+    </div>
+
+    <div class="vocab-wrap">
+      <h4>📋 可学词汇与表达</h4>
+      <table class="vocab-table">
+        <thead><tr><th>词汇/表达</th><th>含义</th><th>用法场景</th></tr></thead>
+        <tbody>
+          <tr><td><em>abundance of</em></td><td>大量的/丰富的</td><td>描述资源过剩</td></tr>
+          <tr><td><em>sedentary lifestyle</em></td><td>久坐的生活方式</td><td>描述健康问题原因</td></tr>
+          <tr><td><em>devastating effect</em></td><td>毁灭性影响</td><td>描述严重后果</td></tr>
+          <tr><td><em>resist the desire</em></td><td>抵抗欲望</td><td>描述自我控制</td></tr>
+          <tr><td><em>tackle these issues</em></td><td>解决这些问题</td><td>方案段开头</td></tr>
+          <tr><td><em>impose taxes on</em></td><td>征税于</td><td>政府措施</td></tr>
+          <tr><td><em>be exposed to</em></td><td>接触到/暴露于</td><td>描述影响</td></tr>
+          <tr><td><em>take responsibility for</em></td><td>对…负责</td><td>个人责任</td></tr>
+          <tr><td><em>likelihood</em></td><td>可能性</td><td>描述概率</td></tr>
+          <tr><td><em>joint efforts</em></td><td>共同努力</td><td>结尾呼吁</td></tr>
+          <tr><td><em>reverse this worrying trend</em></td><td>扭转这一令人担忧的趋势</td><td>结尾呼吁</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ESSAY 6 ═══════════ -->
+<section class="section type-cs" id="essay6">
+  <div class="section-title">
+    <div class="section-num">6</div>
+    <h2>原因 + 解决方案（Causes and Solutions）— 厌学问题</h2>
+  </div>
+  <div class="label-tags">
+    <span class="lt-cs">题型：Causes & Solutions</span>
+    <span class="lt-cs">核心框架：rooted in… / When learning is reduced to…</span>
+  </div>
+
+  <div class="card">
+    <div class="topic-box">
+      <em>Many young people today leave school with negative attitudes towards learning. What are the reasons for this, and what can be done to encourage a positive attitude towards education?</em>
+    </div>
+    <div class="essay">
+      <p>Negative attitudes towards learning have become increasingly prevalent among <strong>school leavers</strong>. While the causes are complex, I believe they are largely rooted in excessive exam pressure and the perceived irrelevance of school subjects to real life.</p>
+      <p>The primary cause of such attitudes is the overwhelming exam pressure in many schools. Young students are required to take numerous tests and spend a disproportionate amount of time on <strong>rote memorisation</strong>. When learning is reduced to constant test preparation, students become passive recipients of information rather than active explorers, which often breeds a sense of <strong>school-weariness</strong>. Another significant factor is that many subjects are perceived as overly theoretical, offering little practical connection to students' daily lives. When students fail to see how classroom content applies to the real world, their motivation to learn inevitably diminishes.</p>
+      <p>To address these problems, schools have a crucial role to play. Firstly, schools should reduce the academic burden by <strong>eliminating unnecessary exams</strong>. It has been shown that when students are less burdened by frequent tests, they tend to develop greater <strong>intellectual curiosity</strong>. Without the constant pressure of exams, they are more willing to ask questions, explore topics in depth, and take intellectual risks—all of which are cornerstones of <strong>lifelong learning</strong>. Secondly, schools should introduce career-oriented courses that <strong>bridge the gap</strong> between academic knowledge and real-world applications. For example, a physics lesson on electricity could involve designing a simple circuit rather than merely memorizing formulas. When students clearly see how their learning translates into practical competence, their motivation shifts from merely passing exams to genuinely developing valuable skills.</p>
+      <p>In conclusion, negative attitudes towards learning are largely driven by exam-centric education and the perceived irrelevance of school subjects. By reducing excessive testing and connecting education to real-world skills, schools can transform learning from a burdensome chore into a meaningful pursuit. Ultimately, education should aim not merely to prepare students for exams, but to cultivate lifelong learners who carry a positive attitude beyond the classroom.</p>
+    </div>
+
+    <div class="vocab-wrap">
+      <h4>📋 高分词汇</h4>
+      <table class="vocab-table">
+        <thead><tr><th>词汇/表达</th><th>含义</th><th>用法场景</th></tr></thead>
+        <tbody>
+          <tr><td><em>school leavers</em></td><td>离校生</td><td>比 "young people today leave school" 更简洁</td></tr>
+          <tr><td><em>school-weariness</em></td><td>厌学情绪</td><td>描述负面心理</td></tr>
+          <tr><td><em>rote memorisation</em></td><td>死记硬背</td><td>批判应试教育</td></tr>
+          <tr><td><em>"teach to the test"</em></td><td>应试教学</td><td>地道短语，描述教育问题</td></tr>
+          <tr><td><em>reignite curiosity</em></td><td>重新点燃好奇心</td><td>描述积极改变</td></tr>
+          <tr><td><em>bridge the gap</em></td><td>弥合差距</td><td>连接理论与实践的万能表达</td></tr>
+          <tr><td><em>intellectual curiosity</em></td><td>求知欲/智识好奇心</td><td>描述学习内驱力</td></tr>
+          <tr><td><em>lifelong learning</em></td><td>终身学习</td><td>结尾升华常用</td></tr>
+        </tbody>
+      </table>
+
+      <h4 style="margin-top:18px;">📋 高分句型</h4>
+      <table class="vocab-table">
+        <thead><tr><th>句型</th><th>适用场景</th></tr></thead>
+        <tbody>
+          <tr><td><em>When learning is reduced to..., students become..., which often breeds...</em></td><td>原因分析段 — 描述连锁反应</td></tr>
+          <tr><td><em>When students fail to see the connection between A and B, their motivation inevitably diminishes.</em></td><td>原因分析段 — 解释因果关系</td></tr>
+          <tr><td><em>...shifts from merely doing A to genuinely doing B.</em></td><td>方案段/结尾 — 描述转变</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ESSAY 7 ═══════════ -->
+<section class="section type-oa" id="essay7">
+  <div class="section-title">
+    <div class="section-num">7</div>
+    <h2>利大于弊（Outweigh）— 线上教育</h2>
+  </div>
+  <div class="label-tags">
+    <span class="lt-oa">题型：Outweigh</span>
+    <span class="lt-oa">核心框架：more likely to have a positive impact</span>
+  </div>
+
+  <div class="card">
+    <div class="topic-box">
+      <em>Online education has become increasingly popular in recent years. Do the advantages of online education outweigh the disadvantages?</em>
+    </div>
+    <div class="essay">
+      <p>As technology advances, many people enjoy taking online classes. While I accept that online education can sometimes have a negative effect, I believe that it is more likely to have a positive impact.</p>
+      <p>On the one hand, online education can lack interaction and require a high sense of <strong>self-discipline</strong> for learners. For example, when students attend an online class, they often find it difficult to stay focused, as there is no teacher physically present to <strong>monitor their attention</strong>. Unlike in a traditional classroom, where a <strong>raised hand</strong> can immediately get the teacher's response, online learners may have to wait hours or even days for a reply to their questions. This can lead to slow progress or even <strong>abandonment of the course</strong>, as students feel <strong>isolated and unsupported</strong>. Furthermore, without external supervision, learners must <strong>rely entirely on</strong> their own motivation to keep up with the coursework, which demands strong self-control that not all students possess.</p>
+      <p>However, I would argue that these drawbacks are <strong>outweighed by</strong> the advantages. Firstly, the lack of face-to-face interaction is less concerning than it might seem, as most online platforms now offer <strong>interactive tools</strong> such as WeChat groups, where students and teachers can exchange questions, ideas, and feedback <strong>in real time</strong>. In fact, such virtual spaces often encourage more participation than traditional classrooms, since <strong>quieter learners</strong> can contribute in writing rather than speaking publicly. Secondly, while online learning does demand self-discipline, it also helps students develop this valuable skill over time—a benefit that extends far beyond their academic lives. These advantages, particularly the <strong>enhancement of interaction</strong> and <strong>self-regulation</strong>, clearly outweigh the minor drawbacks.</p>
+      <p>In conclusion, it seems to me that the potential benefits of online education are <strong>more significant than</strong> the possible drawbacks.</p>
+    </div>
+
+    <div class="vocab-wrap">
+      <h4>📋 可学词汇与表达</h4>
+      <table class="vocab-table">
+        <thead><tr><th>词汇/表达</th><th>含义</th><th>用法场景</th></tr></thead>
+        <tbody>
+          <tr><td><em>self-discipline</em></td><td>自律</td><td>描述学习/工作要求</td></tr>
+          <tr><td><em>monitor their attention</em></td><td>监督注意力</td><td>描述教育场景</td></tr>
+          <tr><td><em>raised hand</em></td><td>举手</td><td>传统课堂对比</td></tr>
+          <tr><td><em>abandonment of the course</em></td><td>放弃课程</td><td>描述负面影响</td></tr>
+          <tr><td><em>isolated and unsupported</em></td><td>孤立无援的</td><td>描述心理状态</td></tr>
+          <tr><td><em>rely entirely on</em></td><td>完全依赖</td><td>描述依赖关系</td></tr>
+          <tr><td><em>outweighed by</em></td><td>被…超过</td><td><strong>Outweigh题型核心表达</strong></td></tr>
+          <tr><td><em>interactive tools</em></td><td>互动工具</td><td>科技/教育场景</td></tr>
+          <tr><td><em>in real time</em></td><td>实时地</td><td>描述即时性</td></tr>
+          <tr><td><em>quieter learners</em></td><td>内向的学习者</td><td>教育场景</td></tr>
+          <tr><td><em>enhancement of interaction</em></td><td>互动的增强</td><td>描述积极结果</td></tr>
+          <tr><td><em>self-regulation</em></td><td>自我调节</td><td>描述自律能力</td></tr>
+          <tr><td><em>more significant than</em></td><td>比…更重要</td><td>Outweigh换种说法</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ COMPARISON TABLE ═══════════ -->
+<section class="section">
+  <div class="section-title">
+    <div class="section-num" style="background:#c4a456;">📊</div>
+    <h2>七篇范文题型对照表</h2>
+  </div>
+  <div class="card">
+    <table class="comp-table">
+      <thead>
+        <tr><th>序号</th><th>题型</th><th>题目主题</th><th>核心框架关键词</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1</strong></td>
+          <td><span class="type-tag tag-db2">讨论双方</span></td>
+          <td>远程办公</td>
+          <td><em>dilemma… I would argue…</em></td>
+        </tr>
+        <tr>
+          <td><strong>2</strong></td>
+          <td><span class="type-tag tag-ad2">同意/不同意</span></td>
+          <td>免费大学</td>
+          <td><em>While I acknowledge… I believe…</em></td>
+        </tr>
+        <tr>
+          <td><strong>3</strong></td>
+          <td><span class="type-tag tag-ad2">同意/不同意</span></td>
+          <td>铁路 vs 公路</td>
+          <td><em>While… are undeniably important, I disagree…</em></td>
+        </tr>
+        <tr>
+          <td><strong>4</strong></td>
+          <td><span class="type-tag tag-oa2">利弊分析</span></td>
+          <td>网购</td>
+          <td><em>there are both positive and negative effects</em></td>
+        </tr>
+        <tr>
+          <td><strong>5</strong></td>
+          <td><span class="type-tag tag-cs2">原因+方案</span></td>
+          <td>肥胖问题</td>
+          <td><em>This essay will discuss… and the measures…</em></td>
+        </tr>
+        <tr>
+          <td><strong>6</strong></td>
+          <td><span class="type-tag tag-cs2">原因+方案</span></td>
+          <td>厌学问题</td>
+          <td><em>rooted in… / When learning is reduced to…</em></td>
+        </tr>
+        <tr>
+          <td><strong>7</strong></td>
+          <td><span class="type-tag tag-oa2">利大于弊</span></td>
+          <td>线上教育</td>
+          <td><em>more likely to have a positive impact</em></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ═══════════ STUDY TIPS ═══════════ -->
+<section class="section">
+  <div class="section-title">
+    <div class="section-num" style="background:#c4644a;">🎯</div>
+    <h2>复习建议</h2>
+  </div>
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-icon">🧱</div>
+      <h4>先背骨架，再填内容</h4>
+      <p>每篇范文先记住开头句和段落首句，再背具体例子。框架记住了，内容自然会跟上。</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">📝</div>
+      <h4>重点背「可学词汇」</h4>
+      <p>这些词汇是你在考场上能直接迁移到任何同类型题目里的万能表达，性价比最高。</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">🌙</div>
+      <h4>睡前读 1 篇，早起默写 1 篇</h4>
+      <p>6 天轮完一遍，所有框架都会刻进你的肌肉记忆。坚持就是胜利。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ LABEL TAGS ═══════════ -->
+<section class="section">
+  <div class="section-title">
+    <div class="section-num" style="background:#888;">🏷️</div>
+    <h2>快速标签速查</h2>
+  </div>
+  <div class="card" style="text-align:center;">
+    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; padding: 12px 0;">
+      <span style="background:#d4e7ed;color:#1e4a5a;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第1篇 → 【讨论双方·办公】</span>
+      <span style="background:#f0dfd1;color:#5a3a28;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第2篇 → 【同意·大学】</span>
+      <span style="background:#f0dfd1;color:#5a3a28;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第3篇 → 【同意·交通】</span>
+      <span style="background:#d8eed9;color:#2d5a30;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第4篇 → 【利弊·购物】</span>
+      <span style="background:#e8def0;color:#4a2d6e;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第5篇 → 【方案·健康】</span>
+      <span style="background:#e8def0;color:#4a2d6e;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第6篇 → 【方案·教育】</span>
+      <span style="background:#d8eed9;color:#2d5a30;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第7篇 → 【利弊·教育】</span>
+    </div>
+  </div>
+</section>
+
+</div><!-- /.container -->
+
+<footer class="footer">
+  <p>雅思写作 Task 2 · 七篇定稿范文全集 &nbsp;|&nbsp; 5 秒确定框架 · 30 秒完成构思 · 25 分钟写完正文 🚀</p>
+</footer>
+
+</body>
+</html>
