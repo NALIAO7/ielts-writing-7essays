@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>雅思写作Task 2 · 七篇定稿范文全集</title>
+<title>雅思写作Task 2 · 十篇定稿范文全集</title>
 <style>
   :root {
     --bg: #fdfbf7;
@@ -293,20 +293,59 @@
     .vocab-table { font-size: .8em; }
     .vocab-table td, .vocab-table th { padding: 6px 8px; }
   }
+
+  /* ── 回到顶部按钮 ── */
+  #back-to-top {
+    position: fixed;
+    right: 26px;
+    bottom: 26px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #2c5e72;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(28,58,66,.28);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(14px);
+    transition: opacity .25s ease, transform .25s ease, visibility .25s ease;
+    z-index: 999;
+  }
+  #back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  #back-to-top:hover {
+    background: #1e3a42;
+    box-shadow: 0 6px 20px rgba(28,58,66,.38);
+  }
+  @media (max-width: 640px) {
+    #back-to-top { right: 18px; bottom: 18px; width: 44px; height: 44px; }
+  }
+  @media print {
+    #back-to-top { display: none; }
+  }
 </style>
 </head>
 <body>
 
 <!-- ═══════════ HERO ═══════════ -->
 <header class="hero">
-  <h1>雅思写作 Task 2 · 七篇定稿范文全集</h1>
-  <p class="sub">7 篇范文 · 6 种题型全覆盖 · 范文 + 词汇表 + 框架拆解</p>
+  <h1>雅思写作 Task 2 · 十篇定稿范文全集</h1>
+  <p class="sub">10 篇范文 · 6 种题型全覆盖 · 范文 + 词汇表 + 框架拆解</p>
   <div class="badge-row">
     <span class="badge">讨论双方</span>
     <span class="badge">同意/不同意</span>
     <span class="badge">利弊分析</span>
     <span class="badge">原因+方案</span>
-    <span class="badge">厌学问题</span>
     <span class="badge">利大于弊</span>
   </div>
 </header>
@@ -318,12 +357,15 @@
   <h3>📖 快速导航</h3>
   <div class="toc-grid">
     <a href="#essay1" class="toc-item"><span class="toc-dot" style="background:#2c5e72"></span> 讨论双方·办公</a>
-    <a href="#essay2" class="toc-item"><span class="toc-dot" style="background:#6b4e3d"></span> 同意·大学</a>
-    <a href="#essay3" class="toc-item"><span class="toc-dot" style="background:#6b4e3d"></span> 同意·交通</a>
-    <a href="#essay4" class="toc-item"><span class="toc-dot" style="background:#4a7c59"></span> 利弊·购物</a>
-    <a href="#essay5" class="toc-item"><span class="toc-dot" style="background:#7b5ea7"></span> 方案·健康</a>
-    <a href="#essay6" class="toc-item"><span class="toc-dot" style="background:#7b5ea7"></span> 方案·教育</a>
-    <a href="#essay7" class="toc-item"><span class="toc-dot" style="background:#4a7c59"></span> 利弊·教育</a>
+    <a href="#essay2" class="toc-item"><span class="toc-dot" style="background:#2c5e72"></span> 讨论双方·环境</a>
+    <a href="#essay3" class="toc-item"><span class="toc-dot" style="background:#6b4e3d"></span> 同意·大学</a>
+    <a href="#essay4" class="toc-item"><span class="toc-dot" style="background:#6b4e3d"></span> 同意·交通</a>
+    <a href="#essay5" class="toc-item"><span class="toc-dot" style="background:#6b4e3d"></span> 同意·回收</a>
+    <a href="#essay6" class="toc-item"><span class="toc-dot" style="background:#6b4e3d"></span> 同意·犯罪</a>
+    <a href="#essay7" class="toc-item"><span class="toc-dot" style="background:#4a7c59"></span> 利弊·购物</a>
+    <a href="#essay8" class="toc-item"><span class="toc-dot" style="background:#7b5ea7"></span> 方案·健康</a>
+    <a href="#essay9" class="toc-item"><span class="toc-dot" style="background:#7b5ea7"></span> 方案·教育</a>
+    <a href="#essay10" class="toc-item"><span class="toc-dot" style="background:#4a7c59"></span> 利弊·教育</a>
   </div>
 </div>
 
@@ -393,9 +435,147 @@
 </section>
 
 <!-- ═══════════ ESSAY 2 ═══════════ -->
-<section class="section type-ad" id="essay2">
+<section class="section type-db" id="essay2">
   <div class="section-title">
     <div class="section-num">2</div>
+    <h2>讨论双方（Discuss both views）— 环境保护</h2>
+  </div>
+  <div class="label-tags">
+    <span class="lt-db">题型：Discuss both views</span>
+    <span class="lt-db">核心框架：While the scale of… is undeniable, I believe that…</span>
+  </div>
+
+  <div class="card">
+    <div class="topic-box">
+      <em>Some people believe that environmental problems are too big for individuals to solve, while others think that individuals can play an important role in protecting the environment. Discuss both views and give your own opinion.</em>
+    </div>
+    <div class="essay">
+      <p>While the scale of environmental challenges is <strong>undeniable</strong>, I believe that individuals can play a more <strong>crucial role</strong> than is often assumed.</p>
+      <p>Individuals can play a significant part in protecting the environment. Individual consumption choices <strong>collectively</strong> shape market demand. If more people reject disposable packaging and <strong>opt for</strong> eco-friendly alternatives, companies will be forced to <strong>alter</strong> their production methods, <strong>thereby</strong> reducing environmental damage at the source. Moreover, such habits gradually <strong>evolve into</strong> an environmental mindset that <strong>permeates</strong> every aspect of life, from commuting and diet to energy consumption. For example, a person who consistently brings their own shopping bag is more persuasive than any slogan, quietly inspiring those around them to change. When countless individual actions <strong>converge</strong>, their collective influence extends across society, <strong>fostering</strong> a shared consensus on sustainability and ultimately enhancing the quality of life for everyone.</p>
+      <p>Faced with environmental problems of such <strong>magnitude</strong>, the power of individuals is extremely limited. Most environmental <strong>degradation</strong> <strong>stems from</strong> large-scale industrial production rather than individual daily habits. Deforestation, fossil fuel extraction, and chemical contamination are all driven by global commercial demand, operating on a scale far beyond what individual actions can <strong>offset</strong>. These issues represent a <strong>systemic</strong> and structural global crisis whose resolution depends on international policy coordination and industrial transformation. Individual efforts, while <strong>admirable</strong>, are ultimately a drop in the bucket against such a system.</p>
+      <p>In conclusion, environmental problems are vast and demand coordinated efforts from governments and corporations. However, individuals should never consider their efforts too small to matter. Everyday choices, when adopted <strong>at scale</strong>, can drive real change and provide the foundation upon which effective policy depends.</p>
+    </div>
+
+    <div class="vocab-wrap">
+      <h4>📋 高分词汇</h4>
+      <table class="vocab-table">
+        <thead><tr><th>词汇</th><th>中文释义</th><th>原文例句</th><th>适用话题</th></tr></thead>
+        <tbody>
+          <tr><td><em>undeniable</em></td><td>不可否认的</td><td>While the scale of environmental challenges is <em>undeniable</em></td><td>万能让步开头</td></tr>
+          <tr><td><em>crucial role</em></td><td>关键作用</td><td>individuals can play a more <em>crucial role</em> than is often assumed</td><td>万能（个人/政府/教育）</td></tr>
+          <tr><td><em>collectively</em></td><td>集体地/共同地</td><td>Individual consumption choices <em>collectively</em> shape market demand</td><td>个人与社会关系类</td></tr>
+          <tr><td><em>opt for</em></td><td>选择</td><td><em>opt for</em> eco-friendly alternatives</td><td>替代 choose</td></tr>
+          <tr><td><em>alter</em></td><td>改变</td><td>companies will be forced to <em>alter</em> their production methods</td><td>替代 change</td></tr>
+          <tr><td><em>thereby</em></td><td>从而/因此</td><td><em>thereby</em> reducing environmental damage</td><td>万能结果连接</td></tr>
+          <tr><td><em>evolve into</em></td><td>逐渐演变成</td><td>such habits gradually <em>evolve into</em> an environmental mindset</td><td>描述渐进变化</td></tr>
+          <tr><td><em>permeate</em></td><td>渗透</td><td>an environmental mindset that <em>permeates</em> every aspect of life</td><td>描述影响广泛</td></tr>
+          <tr><td><em>converge</em></td><td>汇聚</td><td>When countless individual actions <em>converge</em></td><td>描述力量汇聚</td></tr>
+          <tr><td><em>foster</em></td><td>培养/促进</td><td><em>fostering</em> a shared consensus on sustainability</td><td>替代 develop</td></tr>
+          <tr><td><em>magnitude</em></td><td>巨大程度/规模</td><td>environmental problems of such <em>magnitude</em></td><td>替代 size</td></tr>
+          <tr><td><em>degradation</em></td><td>恶化/退化</td><td>environmental <em>degradation</em> stems from</td><td>环境类核心词</td></tr>
+          <tr><td><em>stems from</em></td><td>源于</td><td>degradation <em>stems from</em> large-scale industrial production</td><td>替代 comes from</td></tr>
+          <tr><td><em>offset</em></td><td>抵消</td><td>far beyond what individual actions can <em>offset</em></td><td>环境/经济类</td></tr>
+          <tr><td><em>systemic</em></td><td>系统性的</td><td>a <em>systemic</em> and structural global crisis</td><td>政府/社会类</td></tr>
+          <tr><td><em>admirable</em></td><td>值得赞赏的</td><td>Individual efforts, while <em>admirable</em></td><td>让步句万能词</td></tr>
+          <tr><td><em>at scale</em></td><td>大规模地</td><td>when adopted <em>at scale</em></td><td>替代 on a large scale</td></tr>
+        </tbody>
+      </table>
+
+      <h4 style="margin-top:18px;">📋 高分短语</h4>
+      <table class="vocab-table">
+        <thead><tr><th>短语</th><th>中文释义</th><th>原文例句</th><th>适用场景</th></tr></thead>
+        <tbody>
+          <tr><td><em>shape market demand</em></td><td>塑造市场需求</td><td>Individual choices collectively <em>shape market demand</em></td><td>环境/消费/经济类</td></tr>
+          <tr><td><em>reject disposable packaging</em></td><td>拒绝一次性包装</td><td>people <em>reject disposable packaging</em></td><td>环境类</td></tr>
+          <tr><td><em>eco-friendly alternatives</em></td><td>环保替代品</td><td>opt for <em>eco-friendly alternatives</em></td><td>环境/消费类</td></tr>
+          <tr><td><em>at the source</em></td><td>从源头</td><td>reducing environmental damage <em>at the source</em></td><td>环境/政策类</td></tr>
+          <tr><td><em>permeate every aspect of life</em></td><td>渗透生活的方方面面</td><td>a mindset that <em>permeates every aspect of life</em></td><td>科技/教育/文化类</td></tr>
+          <tr><td><em>extend across society</em></td><td>扩展到全社会</td><td>their influence <em>extends across society</em></td><td>个人与社会关系类</td></tr>
+          <tr><td><em>a shared consensus on sustainability</em></td><td>对可持续发展的共识</td><td>fostering <em>a shared consensus on sustainability</em></td><td>环境/社会类</td></tr>
+          <tr><td><em>large-scale industrial production</em></td><td>大规模工业生产</td><td>stems from <em>large-scale industrial production</em></td><td>环境/经济类</td></tr>
+          <tr><td><em>fossil fuel extraction</em></td><td>化石燃料开采</td><td><em>fossil fuel extraction</em> and chemical contamination</td><td>环境类</td></tr>
+          <tr><td><em>global commercial demand</em></td><td>全球商业需求</td><td>driven by <em>global commercial demand</em></td><td>环境/经济类</td></tr>
+          <tr><td><em>operate on a scale far beyond</em></td><td>运作规模远超</td><td><em>operating on a scale far beyond</em> what...</td><td>对比个人与系统</td></tr>
+          <tr><td><em>international policy coordination</em></td><td>国际政策协调</td><td>depends on <em>international policy coordination</em></td><td>环境/政府类</td></tr>
+          <tr><td><em>industrial transformation</em></td><td>产业转型</td><td>policy coordination and <em>industrial transformation</em></td><td>环境/经济类</td></tr>
+          <tr><td><em>a drop in the bucket</em></td><td>杯水车薪</td><td>ultimately <em>a drop in the bucket</em> against such a system</td><td>万能（个人力量渺小）</td></tr>
+          <tr><td><em>demand coordinated efforts</em></td><td>需要协调努力</td><td>vast and <em>demand coordinated efforts</em> from...</td><td>政府/社会类</td></tr>
+          <tr><td><em>adopted at scale</em></td><td>大规模采用</td><td>when <em>adopted at scale</em></td><td>万能（个人行为普及化）</td></tr>
+          <tr><td><em>drive real change</em></td><td>推动真正变革</td><td>can <em>drive real change</em></td><td>万能（个人/政策效果）</td></tr>
+          <tr><td><em>provide the foundation upon which...depends</em></td><td>为……提供基础</td><td><em>provide the foundation upon which</em> effective policy <em>depends</em></td><td>万能（总结升华）</td></tr>
+        </tbody>
+      </table>
+
+      <h4 style="margin-top:18px;">📋 高分句型</h4>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#2c5e72; margin-bottom:6px;">1. While the scale of...is undeniable, I believe that...</p>
+          <p style="font-size:.86em; color:#6b6b6b; margin-bottom:3px;">使用场景：Discuss both views 或 Agree/Disagree 的让步式开头</p>
+          <p style="font-size:.86em; color:#6b6b6b;"><span style="color:#4a7c59; font-weight:600;">模板：</span>While the [seriousness/importance] of [话题] is undeniable, I believe that [你的立场].</p>
+        </div>
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#2c5e72; margin-bottom:6px;">2. When countless individual actions converge, their collective influence extends across society, fostering...</p>
+          <p style="font-size:.86em; color:#6b6b6b; margin-bottom:3px;">使用场景：论证个人力量的累积效应</p>
+          <p style="font-size:.86em; color:#6b6b6b;"><span style="color:#4a7c59; font-weight:600;">模板：</span>When countless individual [行为] converge, their collective [影响力] extends across [范围], fostering [正面结果].</p>
+        </div>
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#2c5e72; margin-bottom:6px;">3. Faced with environmental problems of such magnitude, the power of individuals is extremely limited.</p>
+          <p style="font-size:.86em; color:#6b6b6b; margin-bottom:3px;">使用场景：主体段观点句，用背景引出立场</p>
+          <p style="font-size:.86em; color:#6b6b6b;"><span style="color:#4a7c59; font-weight:600;">模板：</span>Faced with [问题/挑战] of such [程度], [主语] is/are [状态].</p>
+        </div>
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#2c5e72; margin-bottom:6px;">4. Most...stems from...rather than...</p>
+          <p style="font-size:.86em; color:#6b6b6b; margin-bottom:3px;">使用场景：分析问题根源时，排除表面原因</p>
+          <p style="font-size:.86em; color:#6b6b6b;"><span style="color:#4a7c59; font-weight:600;">模板：</span>Most [问题] stems from [深层原因] rather than [表面原因].</p>
+        </div>
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#2c5e72; margin-bottom:6px;">5. Deforestation, fossil fuel extraction, and chemical contamination are all driven by..., operating on a scale far beyond what...can offset.</p>
+          <p style="font-size:.86em; color:#6b6b6b; margin-bottom:3px;">使用场景：列举具体例子 + 强调规模对比</p>
+          <p style="font-size:.86em; color:#6b6b6b;"><span style="color:#4a7c59; font-weight:600;">模板：</span>[例子A], [例子B], and [例子C] are all driven by [驱动因素], operating on a scale far beyond what [对比对象] can [动词].</p>
+        </div>
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#2c5e72; margin-bottom:6px;">6. Individual efforts, while admirable, are ultimately a drop in the bucket against such a system.</p>
+          <p style="font-size:.86em; color:#6b6b6b; margin-bottom:3px;">使用场景：让步段收束，先肯定再否定</p>
+          <p style="font-size:.86em; color:#6b6b6b;"><span style="color:#4a7c59; font-weight:600;">模板：</span>[某方努力], while admirable, [is/are] ultimately [评价] against [更大体系].</p>
+        </div>
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#2c5e72; margin-bottom:6px;">7. However, individuals should never consider their efforts too small to matter.</p>
+          <p style="font-size:.86em; color:#6b6b6b; margin-bottom:3px;">使用场景：结尾段逆转，强调个人价值</p>
+          <p style="font-size:.86em; color:#6b6b6b;"><span style="color:#4a7c59; font-weight:600;">模板：</span>However, [群体] should never consider their [努力] too small to matter.</p>
+        </div>
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#2c5e72; margin-bottom:6px;">8. Everyday choices, when adopted at scale, can drive real change and provide the foundation upon which effective policy depends.</p>
+          <p style="font-size:.86em; color:#6b6b6b; margin-bottom:3px;">使用场景：结尾段升华，个人与政策的关系</p>
+          <p style="font-size:.86em; color:#6b6b6b;"><span style="color:#4a7c59; font-weight:600;">模板：</span>[个人行为], when adopted at scale, can drive real change and provide the foundation upon which [更大变革] depends.</p>
+        </div>
+      </div>
+
+      <h4 style="margin-top:18px;">🔗 可迁移的论证框架</h4>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div style="background:#f0f7f2; border:1px solid #cfe3d4; border-radius:10px; padding:14px 18px;">
+          <p style="font-weight:700; color:#2d5a30; margin-bottom:6px;">模式一：个人行为的累积效应</p>
+          <p style="font-size:.86em; color:#4a5a4d; margin-bottom:4px;">个人行为 → 汇聚成集体力量 → 倒逼体系改变 → 社会影响</p>
+          <p style="font-size:.84em; color:#6b6b6b;">可迁移场景：消费者选择改变企业、个人习惯改善公共卫生、个人投票影响政治等</p>
+        </div>
+        <div style="background:#f0f7f2; border:1px solid #cfe3d4; border-radius:10px; padding:14px 18px;">
+          <p style="font-weight:700; color:#2d5a30; margin-bottom:6px;">模式二：个人 vs 系统的力量对比</p>
+          <p style="font-size:.86em; color:#4a5a4d; margin-bottom:4px;">问题根源在系统 → 系统规模远超个人 → 个人努力杯水车薪 → 需要制度性解决</p>
+          <p style="font-size:.84em; color:#6b6b6b;">可迁移场景：个人无法解决贫困、个人无法阻止气候变化、个人无法改变教育体制等</p>
+        </div>
+        <div style="background:#f0f7f2; border:1px solid #cfe3d4; border-radius:10px; padding:14px 18px;">
+          <p style="font-weight:700; color:#2d5a30; margin-bottom:6px;">模式三：让步 + 逆转</p>
+          <p style="font-size:.86em; color:#4a5a4d; margin-bottom:4px;">承认对方有道理 → 但个人不应否定自己 → 个人行为是更大变革的基础</p>
+          <p style="font-size:.84em; color:#6b6b6b;">可迁移场景：任何"讨论个人重要性"的题目</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ESSAY 3 ═══════════ -->
+<section class="section type-ad" id="essay3">
+  <div class="section-title">
+    <div class="section-num">3</div>
     <h2>同意/不同意（Agree/Disagree）— 免费大学</h2>
   </div>
   <div class="label-tags">
@@ -458,10 +638,10 @@
   </div>
 </section>
 
-<!-- ═══════════ ESSAY 3 ═══════════ -->
-<section class="section type-ad" id="essay3">
+<!-- ═══════════ ESSAY 4 ═══════════ -->
+<section class="section type-ad" id="essay4">
   <div class="section-title">
-    <div class="section-num">3</div>
+    <div class="section-num">4</div>
     <h2>同意/不同意（Agree/Disagree）— 铁路 vs 公路</h2>
   </div>
   <div class="label-tags">
@@ -522,10 +702,158 @@
   </div>
 </section>
 
-<!-- ═══════════ ESSAY 4 ═══════════ -->
-<section class="section type-oa" id="essay4">
+<!-- ═══════════ ESSAY 5 ═══════════ -->
+<section class="section type-ad" id="essay5">
   <div class="section-title">
-    <div class="section-num">4</div>
+    <div class="section-num">5</div>
+    <h2>同意/不同意（Agree/Disagree）— 立法与回收</h2>
+  </div>
+  <div class="label-tags">
+    <span class="lt-ad">题型：Agree/Disagree</span>
+    <span class="lt-ad">核心框架：While I acknowledge that… is necessary, I disagree with the view that it is the only way…</span>
+  </div>
+
+  <div class="card">
+    <div class="topic-box">
+      <em>Some people claim that not enough of the waste from homes is recycled. They say that the only way to increase recycling is for governments to make it a legal requirement. To what extent do you think laws are needed to make people recycle more of their waste?</em>
+    </div>
+    <div class="essay">
+      <p>While I acknowledge that legislation is a necessary and effective measure, I disagree with the view that it is the only way to increase household recycling. A combination of legal requirements, economic incentives, and public education is needed.</p>
+      <p>Legislation is one of the most effective means to enhance the household waste recycling rate. Governments can introduce laws requiring people to recycle household waste and <strong>impose penalties on</strong> those who fail to comply. In this way, most individuals are more likely to obey the rules out of fear of losing money. They would no longer view garbage classification as an optional or trivial matter. For example, Germany and South Korea have enacted legislation and imposed fines to improve recycling rates. As a result, household recycling rates in these countries have risen significantly, with residents actively learning waste-sorting rules to avoid penalties. Legislation provides the <strong>initial impetus for behavior change</strong>. As external constraints gradually become <strong>internalized as habits</strong>, garbage sorting shifts from being "something that has to be done" to "something that is taken for granted".</p>
+      <p>However, I would argue that legislation alone is insufficient to solve the waste recycling problem. Both economic incentives and public education can play a crucial role in addressing this issue. Economic incentives often relate directly to people's financial interests, thereby <strong>stimulating public participation</strong>. For instance, the <strong>deposit return system</strong>—where consumers pay a deposit when purchasing beverages and receive it back upon returning the empty bottles—transforms recycling from "avoiding losses" to "actively benefiting". At the same time, public education fundamentally <strong>nurtures environmental awareness</strong>, reducing reliance on external rewards and punishments. For example, in Nordic countries such as Norway, environmental education in schools has integrated the concept of recycling into children's upbringing, making it a lifelong habit for an entire generation. Laws can regulate behavior, but they cannot shape beliefs. Only when incentives and education work together can recycling transform from <strong>external constraint to internal consciousness</strong>, and only then can it truly be sustainable.</p>
+      <p>In conclusion, while legislation is undoubtedly necessary to initiate behaviour change in the short term, it is not sufficient on its own. Sustainable progress in waste recycling can only be achieved when legal requirements are combined with economic incentives and public education.</p>
+    </div>
+
+    <!-- 核心失分点 -->
+    <div style="background:#fff8f0; border-radius:10px; padding:20px 24px; margin-bottom:20px; border:1px solid #f0dcc0;">
+      <h4 style="font-size:.92em; color:#b87333; margin-bottom:12px; font-weight:700; letter-spacing:.04em;">🔍 核心失分点总结</h4>
+      <table class="vocab-table">
+        <thead><tr><th>严重程度</th><th>问题</th><th>原文实例</th><th>解决方案</th></tr></thead>
+        <tbody>
+          <tr><td><span style="background:#ffebee;color:#c62828;padding:2px 8px;border-radius:8px;font-weight:700;font-size:.82em;">致命</span></td><td>立场自相矛盾</td><td><em>I argue that legislation is the only way</em></td><td>改为 legislation alone is insufficient</td></tr>
+          <tr><td><span style="background:#ffebee;color:#c62828;padding:2px 8px;border-radius:8px;font-weight:700;font-size:.82em;">致命</span></td><td>拼写错误</td><td><em>Governmens、offend</em></td><td>写完后用三遍扫描法查拼写</td></tr>
+          <tr><td><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:8px;font-weight:600;font-size:.82em;">次要</span></td><td>冠词和名词错误</td><td><em>German and Korea、recycling rate 缺冠词</em></td><td>检查国家名、可数名词单数</td></tr>
+          <tr><td><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:8px;font-weight:600;font-size:.82em;">次要</span></td><td>口语化表达</td><td><em>do-able or not-do-able</em></td><td>换为 optional 或 discretionary</td></tr>
+          <tr><td><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:8px;font-weight:600;font-size:.82em;">快速提分</span></td><td>代词指代不清</td><td><em>It needs to combine</em></td><td>明确指出主语</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="vocab-wrap">
+      <h4>📋 高分短语</h4>
+      <table class="vocab-table">
+        <thead><tr><th>短语</th><th>中文释义</th></tr></thead>
+        <tbody>
+          <tr><td><em>comply with recycling regulations</em></td><td>遵守回收法规</td></tr>
+          <tr><td><em>impose penalties on</em></td><td>对……施加罚款</td></tr>
+          <tr><td><em>initial impetus for behavior change</em></td><td>行为改变的最初推力</td></tr>
+          <tr><td><em>internalized as habits</em></td><td>内化为习惯</td></tr>
+          <tr><td><em>deposit return system</em></td><td>押金退回制度</td></tr>
+          <tr><td><em>stimulate public participation</em></td><td>激发公众参与</td></tr>
+          <tr><td><em>nurture environmental awareness</em></td><td>培育环保意识</td></tr>
+          <tr><td><em>external constraints to internal consciousness</em></td><td>从外在约束到内在自觉</td></tr>
+        </tbody>
+      </table>
+
+      <h4 style="margin-top:18px;">📋 高分句型</h4>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#6b4e3d; margin-bottom:6px;">1. Legislation provides the initial impetus for... As external constraints become internalized, ...shifts from...to...</p>
+          <p style="font-size:.86em; color:#6b6b6b;">立法为……提供最初推力；当外在约束内化，……从……转变为……</p>
+        </div>
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#6b4e3d; margin-bottom:6px;">2. Laws can regulate behavior, but they cannot shape beliefs.</p>
+          <p style="font-size:.86em; color:#6b6b6b;">法律能约束行为，却不能塑造信念。</p>
+        </div>
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#6b4e3d; margin-bottom:6px;">3. Only when A and B work together can C transform from D to E.</p>
+          <p style="font-size:.86em; color:#6b6b6b;">只有当 A 与 B 协同作用，C 才能从 D 转变为 E。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ESSAY 6 ═══════════ -->
+<section class="section type-ad" id="essay6">
+  <div class="section-title">
+    <div class="section-num">6</div>
+    <h2>同意/不同意（Agree/Disagree）— 父母担责</h2>
+  </div>
+  <div class="label-tags">
+    <span class="lt-ad">题型：Agree/Disagree</span>
+    <span class="lt-ad">核心框架：While I understand the reasoning… I largely disagree… Nevertheless…</span>
+  </div>
+
+  <div class="card">
+    <div class="topic-box">
+      <em>Some people think that parents should be punished if their children commit crimes because they are responsible for their children's actions. To what extent do you agree or disagree?</em>
+    </div>
+    <div class="essay">
+      <p>When it comes to holding parents accountable for crimes committed by their children, opinions vary widely. While I understand the reasoning behind this proposal, I largely disagree with it, as I believe criminal responsibility should primarily rest with the offender. Nevertheless, there are limited circumstances under which parents should indeed face legal consequences.</p>
+      <p>The main reason I disagree is that children, particularly those above the age of criminal responsibility, are <strong>moral agents</strong> capable of making their own choices. No matter how hard parents try to <strong>instill proper values</strong>, they cannot fully control every decision their offspring makes once exposed to broader society. Furthermore, holding parents liable for their children's misdeeds could trigger a series of unintended consequences. Families might be torn apart by financial penalties or even imprisonment, leaving younger siblings without guardians and pushing more juveniles towards <strong>the fringes of society</strong>. A punitive approach targeting parents would therefore risk <strong>compounding the very social problems</strong> it seeks to address.</p>
+      <p>That said, I concede that parents should bear legal liability in specific scenarios. If a parent actively coaches, pressures, or forces a minor to break the law, they are clearly <strong>complicit in the crime</strong>. Similarly, severe parental neglect—such as failing to prevent a young child from accessing weapons or committing acts of violence—should <strong>warrant prosecution</strong>, as such failure to provide basic care directly enables harmful behaviour. In these cases, punishment serves as both justice for the victim and <strong>a deterrent against</strong> future misconduct.</p>
+      <p>In conclusion, although I do not endorse the idea of punishing parents in most cases, I believe that targeted legal action is justified when parents are directly involved in or <strong>grossly negligent</strong> towards their child's criminal acts. The key lies in distinguishing <strong>genuine parental fault</strong> from <strong>the inevitable limits of upbringing</strong>.</p>
+    </div>
+
+    <!-- 核心失分点 -->
+    <div style="background:#fff8f0; border-radius:10px; padding:20px 24px; margin-bottom:20px; border:1px solid #f0dcc0;">
+      <h4 style="font-size:.92em; color:#b87333; margin-bottom:12px; font-weight:700; letter-spacing:.04em;">🔍 核心失分点总结</h4>
+      <table class="vocab-table">
+        <thead><tr><th>严重程度</th><th>问题</th><th>原文实例</th></tr></thead>
+        <tbody>
+          <tr><td><span style="background:#ffebee;color:#c62828;padding:2px 8px;border-radius:8px;font-weight:700;font-size:.82em;">致命</span></td><td>拼写错误</td><td><em>frothier → for their</em></td></tr>
+          <tr><td><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:8px;font-weight:600;font-size:.82em;">次要</span></td><td>主谓不一致</td><td><em>their offspring make → their offspring makes</em></td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:12px; font-size:.86em; color:#2e7d32; background:#f0f7f2; border:1px solid #cfe3d4; border-radius:8px; padding:8px 14px;">✅ 除上述两处外，无其他重大扣分点。</p>
+    </div>
+
+    <div class="vocab-wrap">
+      <h4>📋 高分词汇</h4>
+      <table class="vocab-table">
+        <thead><tr><th>词汇/表达</th><th>含义</th><th>用法场景</th></tr></thead>
+        <tbody>
+          <tr><td><em>moral agents</em></td><td>道德主体（能为自己行为负责的人）</td><td>讨论责任归属</td></tr>
+          <tr><td><em>instill proper values</em></td><td>灌输正确的价值观</td><td>家庭教育话题</td></tr>
+          <tr><td><em>complicit in the crime</em></td><td>共同参与犯罪</td><td>描述共谋行为</td></tr>
+          <tr><td><em>warrant prosecution</em></td><td>应受起诉</td><td>法律类表达</td></tr>
+          <tr><td><em>grossly negligent</em></td><td>严重疏忽的</td><td>法律类表达</td></tr>
+          <tr><td><em>a deterrent against</em></td><td>对……的威慑</td><td>讨论惩罚效果</td></tr>
+          <tr><td><em>the fringes of society</em></td><td>社会边缘</td><td>描述社会后果</td></tr>
+          <tr><td><em>compound the social problems</em></td><td>加剧社会问题</td><td>描述负面连锁反应</td></tr>
+          <tr><td><em>genuine parental fault</em></td><td>父母的真实过错</td><td>区分责任边界</td></tr>
+          <tr><td><em>the inevitable limits of upbringing</em></td><td>养育中不可避免的局限</td><td>结尾提炼核心矛盾</td></tr>
+        </tbody>
+      </table>
+
+      <h4 style="margin-top:18px;">📋 高分句型</h4>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#6b4e3d; margin-bottom:6px;">1. When it comes to..., opinions vary widely.</p>
+          <p style="font-size:.86em; color:#6b6b6b;">话题引入万能句</p>
+        </div>
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#6b4e3d; margin-bottom:6px;">2. No matter how hard sb. try to..., they cannot fully control...</p>
+          <p style="font-size:.86em; color:#6b6b6b;">让步强调</p>
+        </div>
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#6b4e3d; margin-bottom:6px;">3. A punitive approach targeting...would therefore risk compounding the very social problems it seeks to address.</p>
+          <p style="font-size:.86em; color:#6b6b6b;">讽刺性后果论证</p>
+        </div>
+        <div style="background:#fafaf7; border:1px solid var(--border); border-radius:10px; padding:14px 18px;">
+          <p style="font-family:var(--font-en); font-style:italic; color:#6b4e3d; margin-bottom:6px;">4. The key lies in distinguishing A from B.</p>
+          <p style="font-size:.86em; color:#6b6b6b;">结尾提炼核心矛盾</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ESSAY 7 ═══════════ -->
+<section class="section type-oa" id="essay7">
+  <div class="section-title">
+    <div class="section-num">7</div>
     <h2>利弊分析（Advantages/Disadvantages）— 网购</h2>
   </div>
   <div class="label-tags">
@@ -589,10 +917,10 @@
   </div>
 </section>
 
-<!-- ═══════════ ESSAY 5 ═══════════ -->
-<section class="section type-cs" id="essay5">
+<!-- ═══════════ ESSAY 8 ═══════════ -->
+<section class="section type-cs" id="essay8">
   <div class="section-title">
-    <div class="section-num">5</div>
+    <div class="section-num">8</div>
     <h2>原因 + 解决方案（Causes and Solutions）— 肥胖问题</h2>
   </div>
   <div class="label-tags">
@@ -657,10 +985,10 @@
   </div>
 </section>
 
-<!-- ═══════════ ESSAY 6 ═══════════ -->
-<section class="section type-cs" id="essay6">
+<!-- ═══════════ ESSAY 9 ═══════════ -->
+<section class="section type-cs" id="essay9">
   <div class="section-title">
-    <div class="section-num">6</div>
+    <div class="section-num">9</div>
     <h2>原因 + 解决方案（Causes and Solutions）— 厌学问题</h2>
   </div>
   <div class="label-tags">
@@ -708,10 +1036,10 @@
   </div>
 </section>
 
-<!-- ═══════════ ESSAY 7 ═══════════ -->
-<section class="section type-oa" id="essay7">
+<!-- ═══════════ ESSAY 10 ═══════════ -->
+<section class="section type-oa" id="essay10">
   <div class="section-title">
-    <div class="section-num">7</div>
+    <div class="section-num">10</div>
     <h2>利大于弊（Outweigh）— 线上教育</h2>
   </div>
   <div class="label-tags">
@@ -776,7 +1104,7 @@
 <section class="section">
   <div class="section-title">
     <div class="section-num" style="background:#c4a456;">📊</div>
-    <h2>七篇范文题型对照表</h2>
+    <h2>十篇范文题型对照表</h2>
   </div>
   <div class="card">
     <table class="comp-table">
@@ -792,36 +1120,54 @@
         </tr>
         <tr>
           <td><strong>2</strong></td>
+          <td><span class="type-tag tag-db2">讨论双方</span></td>
+          <td>环境保护</td>
+          <td><em>While the scale of… is undeniable, I believe that…</em></td>
+        </tr>
+        <tr>
+          <td><strong>3</strong></td>
           <td><span class="type-tag tag-ad2">同意/不同意</span></td>
           <td>免费大学</td>
           <td><em>While I acknowledge the appeal… I believe its drawbacks outweigh…</em></td>
         </tr>
         <tr>
-          <td><strong>3</strong></td>
+          <td><strong>4</strong></td>
           <td><span class="type-tag tag-ad2">同意/不同意</span></td>
           <td>铁路 vs 公路</td>
           <td><em>While… are undeniably important, I disagree…</em></td>
         </tr>
         <tr>
-          <td><strong>4</strong></td>
+          <td><strong>5</strong></td>
+          <td><span class="type-tag tag-ad2">同意/不同意</span></td>
+          <td>立法与回收</td>
+          <td><em>While I acknowledge that… is necessary, I disagree with the view that it is the only way…</em></td>
+        </tr>
+        <tr>
+          <td><strong>6</strong></td>
+          <td><span class="type-tag tag-ad2">同意/不同意</span></td>
+          <td>父母担责</td>
+          <td><em>While I understand the reasoning… I largely disagree… Nevertheless…</em></td>
+        </tr>
+        <tr>
+          <td><strong>7</strong></td>
           <td><span class="type-tag tag-oa2">利弊分析</span></td>
           <td>网购</td>
           <td><em>While this trend offers…, it also brings…</em></td>
         </tr>
         <tr>
-          <td><strong>5</strong></td>
+          <td><strong>8</strong></td>
           <td><span class="type-tag tag-cs2">原因+方案</span></td>
           <td>肥胖问题</td>
           <td><em>This troubling trend is largely driven by… Addressing it requires…</em></td>
         </tr>
         <tr>
-          <td><strong>6</strong></td>
+          <td><strong>9</strong></td>
           <td><span class="type-tag tag-cs2">原因+方案</span></td>
           <td>厌学问题</td>
           <td><em>rooted in… / When learning is reduced to…</em></td>
         </tr>
         <tr>
-          <td><strong>7</strong></td>
+          <td><strong>10</strong></td>
           <td><span class="type-tag tag-oa2">利大于弊</span></td>
           <td>线上教育</td>
           <td><em>While this mode has certain drawbacks, I believe its advantages are more significant</em></td>
@@ -865,12 +1211,15 @@
   <div class="card" style="text-align:center;">
     <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; padding: 12px 0;">
       <span style="background:#d4e7ed;color:#1e4a5a;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第1篇 → 【讨论双方·办公】</span>
-      <span style="background:#f0dfd1;color:#5a3a28;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第2篇 → 【同意·大学】</span>
-      <span style="background:#f0dfd1;color:#5a3a28;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第3篇 → 【同意·交通】</span>
-      <span style="background:#d8eed9;color:#2d5a30;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第4篇 → 【利弊·购物】</span>
-      <span style="background:#e8def0;color:#4a2d6e;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第5篇 → 【方案·健康】</span>
-      <span style="background:#e8def0;color:#4a2d6e;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第6篇 → 【方案·教育】</span>
-      <span style="background:#d8eed9;color:#2d5a30;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第7篇 → 【利弊·教育】</span>
+      <span style="background:#d4e7ed;color:#1e4a5a;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第2篇 → 【讨论双方·环境】</span>
+      <span style="background:#f0dfd1;color:#5a3a28;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第3篇 → 【同意·大学】</span>
+      <span style="background:#f0dfd1;color:#5a3a28;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第4篇 → 【同意·交通】</span>
+      <span style="background:#f0dfd1;color:#5a3a28;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第5篇 → 【同意·回收】</span>
+      <span style="background:#f0dfd1;color:#5a3a28;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第6篇 → 【同意·犯罪】</span>
+      <span style="background:#d8eed9;color:#2d5a30;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第7篇 → 【利弊·购物】</span>
+      <span style="background:#e8def0;color:#4a2d6e;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第8篇 → 【方案·健康】</span>
+      <span style="background:#e8def0;color:#4a2d6e;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第9篇 → 【方案·教育】</span>
+      <span style="background:#d8eed9;color:#2d5a30;padding:8px 18px;border-radius:20px;font-weight:600;font-size:.92em;">第10篇 → 【利弊·教育】</span>
     </div>
   </div>
 </section>
@@ -878,8 +1227,27 @@
 </div><!-- /.container -->
 
 <footer class="footer">
-  <p>雅思写作 Task 2 · 七篇定稿范文全集 &nbsp;|&nbsp; 5 秒确定框架 · 30 秒完成构思 · 25 分钟写完正文 🚀</p>
+  <p>雅思写作 Task 2 · 十篇定稿范文全集 &nbsp;|&nbsp; 5 秒确定框架 · 30 秒完成构思 · 25 分钟写完正文 🚀</p>
 </footer>
+
+<button id="back-to-top" aria-label="回到顶部" title="回到顶部">↑</button>
+<script>
+  (function () {
+    var btn = document.getElementById('back-to-top');
+    function toggle() {
+      if (window.scrollY > 300) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    }
+    window.addEventListener('scroll', toggle, { passive: true });
+    toggle();
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
+</script>
 
 </body>
 </html>
